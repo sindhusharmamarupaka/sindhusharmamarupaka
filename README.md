@@ -43,6 +43,9 @@ Status: ✅ Completed
 ---
 
 ## 🧭 How I Approach Data Problems
+
+![Data Analysis Pipeline](https://raw.githubusercontent.com/sindhusharmamarupaka/sindhusharmamarupaka/main/pipeline_diagram.png)
+
 I focus on why the analysis matters, not only on producing charts.
 
 ---
