@@ -8,7 +8,7 @@ I'm drawn to public-interest data in particular — labour force surveys, railwa
 
 ## 🔎 Currently Investigating
 
-**🇮🇳 India Gender Gap Analytics** — *In Progress*
+**India Gender Gap Analytics** 
 
 An end-to-end analysis of gender disparities in labour force participation across India, using PLFS 2023–24 data. Built as a full analytical model — star-schema data, DAX measures, drill-through dashboard — not just a chart wrapped in a dashboard shell.
 
@@ -17,56 +17,55 @@ An end-to-end analysis of gender disparities in labour force participation acros
 2. Which states show the largest gender gap?
 3. How does participation differ between rural and urban areas?
 4. Which demographic groups show the largest disparities?
+<img src="https://raw.githubusercontent.com/sindhusharmamarupaka/sindhusharmamarupaka/main/badge_in_progress.png" width="140">
 
 ---
-
 ## 📌 Case Studies
 
 ### 01 · India Gender Gap Analytics
-`SQL` `Power Query` `DAX` `Power BI`
+![SQL](https://img.shields.io/badge/SQL-d64545?style=for-the-badge&logo=mysql&logoColor=white) ![Power Query](https://img.shields.io/badge/Power%20Query-e75480?style=for-the-badge&logo=powerquery&logoColor=white) ![DAX](https://img.shields.io/badge/DAX-2e8b57?style=for-the-badge) ![Power BI](https://img.shields.io/badge/Power%20BI-d4a017?style=for-the-badge&logo=powerbi&logoColor=black)
 
-> Real-world analysis of gender and labour-force participation patterns across India.
+Real-world analysis of gender and labour-force participation patterns across India.
 
-**Status:** 🚧 In Progress
+<img src="https://raw.githubusercontent.com/sindhusharmamarupaka/sindhusharmamarupaka/main/badge_in_progress.png" width="140">
 
 ---
 
 ### 02 · Indian Railways Punctuality Analysis
-`SQL` `MySQL Workbench`
+![SQL](https://img.shields.io/badge/SQL-d64545?style=for-the-badge&logo=mysql&logoColor=white) ![MySQL Workbench](https://img.shields.io/badge/MySQL%20Workbench-d64545?style=for-the-badge&logo=mysql&logoColor=white)
 
-> **Question**
-> Where does Indian Railways lose the most time — by route, station, or time of day?
->
-> **Approach**
-> A 5–7 level SQL query progression across a 1,900-row real delay dataset — aggregation, CASE WHEN logic, subqueries, CTEs, window functions.
->
-> **What I caught**
-> Rows were silently dropping during CSV import. Traced it to an encoding mismatch and fixed it with `LOAD DATA LOCAL INFILE` and explicit NULL handling.
->
-> **Delivered**
-> 9 structured SQL files and a 210-question study bank, from raw import through reusable views.
+**Question**
+Where does Indian Railways lose the most time — by route, station, or time of day?
 
-**Status:** ✅ Completed
+**Approach**
+A 5–7 level SQL query progression across a 1,900-row real delay dataset — aggregation, CASE WHEN logic, subqueries, CTEs, window functions.
+
+**What I caught**
+Rows were silently dropping during CSV import. Traced it to an encoding mismatch and fixed it with `LOAD DATA LOCAL INFILE` and explicit NULL handling.
+
+**Delivered**
+9 structured SQL files and a 210-question study bank, from raw import through reusable views.
+
+<img src="https://raw.githubusercontent.com/sindhusharmamarupaka/sindhusharmamarupaka/main/badge_completed.png" width="140">
 
 ---
 
 ### 03 · Customer Feedback Analysis
-`Python` `Pandas` `HuggingFace API`
+![Python](https://img.shields.io/badge/Python-355c7d?style=for-the-badge&logo=python&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-e75480?style=for-the-badge&logo=pandas&logoColor=white) ![HuggingFace API](https://img.shields.io/badge/HuggingFace%20API-2e8b57?style=for-the-badge&logo=huggingface&logoColor=white)
 
-> **Problem statement**
-> Can genuine complaint signals be reliably separated from noisy customer review text, at scale?
->
-> **Approach**
-> Wrangled a Kaggle clothing-reviews dataset and built a rule-based complaint filter using differential word-rate analysis, then automated response drafting via the HuggingFace Inference API.
->
-> **What I caught**
-> My first pass used raw keyword frequency — common words drowned out real complaints. Rebuilt it around differential word-rate analysis instead, and re-architected the email step from Gemini to HuggingFace after hitting quota limits mid-project.
->
-> **Delivered**
-> Shortlisted from ~25 students at Imarticus. Full pipeline — notebook, README, chart, cleaned dataset, submission package.
+**Problem statement**
+Can genuine complaint signals be reliably separated from noisy customer review text, at scale?
 
-**Status:** ✅ Completed
+**Approach**
+Wrangled a Kaggle clothing-reviews dataset and built a rule-based complaint filter using differential word-rate analysis, then automated response drafting via the HuggingFace Inference API.
 
+**What I caught**
+My first pass used raw keyword frequency — common words drowned out real complaints. Rebuilt it around differential word-rate analysis instead, and re-architected the email step from Gemini to HuggingFace after hitting quota limits mid-project.
+
+**Delivered**
+Shortlisted from ~25 students at Imarticus. Full pipeline — notebook, README, chart, cleaned dataset, submission package.
+
+<img src="https://raw.githubusercontent.com/sindhusharmamarupaka/sindhusharmamarupaka/main/badge_completed.png" width="140">
 ---
 ## 🧭 How I Approach Data Problems
 
