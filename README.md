@@ -54,48 +54,9 @@ I focus on why the analysis matters, not only on producing charts.
 
 *Click a skill to see where I've applied it.*
 
-<details>
-<summary><img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"></summary>
-<br>
+![Toolkit](https://raw.githubusercontent.com/sindhusharmamarupaka/sindhusharmamarupaka/main/toolkit_graphic.png)
 
-- **India Gender Gap Analytics** — MySQL staging for PLFS 2023–24 data
-- **Indian Railways Punctuality Analysis** — 5–7 level query progression, CTEs, window functions, 1,900-row dataset
-</details>
-
-<details>
-<summary><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"></summary>
-<br>
-
-- **Customer Feedback Analysis** — Pandas-based complaint filtering, differential word-rate analysis, HuggingFace API integration
-</details>
-
-<details>
-<summary><img src="https://img.shields.io/badge/Power%20BI%20%2F%20DAX-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"></summary>
-<br>
-
-- **India Gender Gap Analytics** — Star-schema model, DAX measures, drill-through dashboard, bookmark navigation
-</details>
-
-<details>
-<summary><img src="https://img.shields.io/badge/Power%20Query-217346?style=for-the-badge&logo=powerquery&logoColor=white"></summary>
-<br>
-
-- **India Gender Gap Analytics** — Cleaning and reshaping raw PLFS indicator columns
-</details>
-
-<details>
-<summary><img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white"></summary>
-<br>
-
-- **SME Retail Finance Cash Flow Dashboard** *(upcoming)* — Cash flow modeling and KPI reporting
-</details>
-
-<details>
-<summary><img src="https://img.shields.io/badge/Currently%20Developing-6c757d?style=for-the-badge"></summary>
-<br>
-
-Machine Learning · Advanced SQL · Statistical Modelling
-</details>
+*Currently developing: Machine Learning · Advanced SQL · Statistical Modelling*
 
 
 
