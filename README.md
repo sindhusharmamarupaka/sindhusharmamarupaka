@@ -22,26 +22,52 @@ An end-to-end analysis of gender disparities in labour force participation acros
 
 ## 📌 Case Studies
 
-**01 · India Gender Gap Analytics** — SQL, Power Query, DAX, Power BI
-Real-world analysis of gender and labour-force participation patterns across India.
-Status: 🚧 In Progress
+### 01 · India Gender Gap Analytics
+`SQL` `Power Query` `DAX` `Power BI`
 
-**02 · Indian Railways Punctuality Analysis** — SQL, MySQL Workbench
-**Question:** Where does Indian Railways lose the most time — by route, station, or time of day?
-**Approach:** A 5–7 level SQL query progression across a 1,900-row real delay dataset — aggregation, CASE WHEN logic, subqueries, CTEs, window functions.
-**What I caught:** Rows were silently dropping during CSV import. Traced it to an encoding mismatch and fixed it with `LOAD DATA LOCAL INFILE` and explicit NULL handling.
-**Delivered:** 9 structured SQL files and a 210-question study bank, from raw import through reusable views.
-Status: ✅ Completed
+> Real-world analysis of gender and labour-force participation patterns across India.
 
-**03 · Customer Feedback Analysis** — Python, Pandas, HuggingFace API
-**Problem statement:** Can genuine complaint signals be reliably separated from noisy customer review text, at scale?
-**Approach:** Wrangled a Kaggle clothing-reviews dataset and built a rule-based complaint filter using differential word-rate analysis, then automated response drafting via the HuggingFace Inference API.
-**What I caught:** My first pass used raw keyword frequency — common words drowned out real complaints. Rebuilt it around differential word-rate analysis instead, and re-architected the email step from Gemini to HuggingFace after hitting quota limits mid-project.
-**Delivered:** Shortlisted from ~25 students at Imarticus. Full pipeline — notebook, README, chart, cleaned dataset, submission package.
-Status: ✅ Completed
+**Status:** 🚧 In Progress
 
 ---
 
+### 02 · Indian Railways Punctuality Analysis
+`SQL` `MySQL Workbench`
+
+> **Question**
+> Where does Indian Railways lose the most time — by route, station, or time of day?
+>
+> **Approach**
+> A 5–7 level SQL query progression across a 1,900-row real delay dataset — aggregation, CASE WHEN logic, subqueries, CTEs, window functions.
+>
+> **What I caught**
+> Rows were silently dropping during CSV import. Traced it to an encoding mismatch and fixed it with `LOAD DATA LOCAL INFILE` and explicit NULL handling.
+>
+> **Delivered**
+> 9 structured SQL files and a 210-question study bank, from raw import through reusable views.
+
+**Status:** ✅ Completed
+
+---
+
+### 03 · Customer Feedback Analysis
+`Python` `Pandas` `HuggingFace API`
+
+> **Problem statement**
+> Can genuine complaint signals be reliably separated from noisy customer review text, at scale?
+>
+> **Approach**
+> Wrangled a Kaggle clothing-reviews dataset and built a rule-based complaint filter using differential word-rate analysis, then automated response drafting via the HuggingFace Inference API.
+>
+> **What I caught**
+> My first pass used raw keyword frequency — common words drowned out real complaints. Rebuilt it around differential word-rate analysis instead, and re-architected the email step from Gemini to HuggingFace after hitting quota limits mid-project.
+>
+> **Delivered**
+> Shortlisted from ~25 students at Imarticus. Full pipeline — notebook, README, chart, cleaned dataset, submission package.
+
+**Status:** ✅ Completed
+
+---
 ## 🧭 How I Approach Data Problems
 
 ![Data Analysis Pipeline](https://raw.githubusercontent.com/sindhusharmamarupaka/sindhusharmamarupaka/main/pipeline_diagram.png)
