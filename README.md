@@ -1,3 +1,5 @@
+![Sindhu Marupaka](https://raw.githubusercontent.com/sindhusharmamarupaka/sindhusharmamarupaka/main/profile_banner.png)
+
 I work with data to uncover patterns, answer business questions, and communicate insights through analysis and visualization. Most dashboards answer "what happened" — I try to build ones that also answer "so what should we do about it."
 
 I'm drawn to public-interest data in particular — labour force surveys, railway operations, agricultural risk — because I'd rather practice on real, messy questions that affect people than polish a textbook dataset.
