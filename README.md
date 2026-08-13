@@ -103,7 +103,8 @@ I focus on why the analysis matters, not only on producing charts.
 
 ## 🤝 Connect
 
-📍 Hyderabad, India · **LinkedIn:** [add your LinkedIn URL] · **Email:** [add your professional email] · **Medium:** [medium.com/@sindhusharmamarupakaa](https://medium.com/@sindhusharmamarupakaa)
+📍 Hyderabad, India · **LinkedIn:** www.linkedin.com/in/sindhu-sharma-data-analyst · **Email:** sindhusharmamarupakaa@gmail.com · 
+**Medium:** [medium.com/@sindhusharmamarupakaa](https://medium.com/@sindhusharmamarupakaa)
 
 ---
 
