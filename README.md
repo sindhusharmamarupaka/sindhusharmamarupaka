@@ -8,18 +8,20 @@ I'm drawn to public-interest data in particular — labour force surveys, railwa
 
 ## 🔎 Currently Investigating
 
-**India Gender Gap Analytics** 
+**India Gender Gap Analytics**
 
 An end-to-end analysis of gender disparities in labour force participation across India, using PLFS 2023–24 data. Built as a full analytical model — star-schema data, DAX measures, drill-through dashboard — not just a chart wrapped in a dashboard shell.
+
+<img src="https://raw.githubusercontent.com/sindhusharmamarupaka/sindhusharmamarupaka/main/badge_in_progress.png" width="140">
 
 **Key questions driving this project:**
 1. How does female LFPR vary across Indian states?
 2. Which states show the largest gender gap?
 3. How does participation differ between rural and urban areas?
 4. Which demographic groups show the largest disparities?
-<img src="https://raw.githubusercontent.com/sindhusharmamarupaka/sindhusharmamarupaka/main/badge_in_progress.png" width="140">
 
 ---
+
 ## 📌 Case Studies
 
 ### 01 · India Gender Gap Analytics
@@ -66,29 +68,89 @@ My first pass used raw keyword frequency — common words drowned out real compl
 Shortlisted from ~25 students at Imarticus. Full pipeline — notebook, README, chart, cleaned dataset, submission package.
 
 <img src="https://raw.githubusercontent.com/sindhusharmamarupaka/sindhusharmamarupaka/main/badge_completed.png" width="140">
+
 ---
+
+### 04 · Accident Dataset Analysis
+![Python](https://img.shields.io/badge/Python-355c7d?style=for-the-badge&logo=python&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-e75480?style=for-the-badge&logo=pandas&logoColor=white) ![GenAI](https://img.shields.io/badge/GenAI-2e8b57?style=for-the-badge)
+
+**Question:** Given limited safety-intervention resources, which time windows, vehicle categories, weather conditions, and locations should be prioritized to reduce accident frequency and severity?
+
+**Approach:** Cleaned 12,316 real road traffic accident records (16 of 32 fields had missing data), engineered time-of-day features, and ran percentage-normalized comparisons to avoid volume bias skewing the results.
+
+**What I caught:** Raw counts would have made "Normal" weather look artificially safe purely because it's the most common condition. Switching to within-category percentages revealed the opposite: Normal weather has a **1.3% fatal rate**, Rain has **1.7%** — challenging the assumption that bad weather is the bigger danger.
+
+**Delivered:** A full case study identifying 5PM as the highest-risk accident hour, office-area traffic as the top location risk, and a GenAI-usage framework where every analytical decision was made independently — GenAI supported implementation, not interpretation.
+
+<img src="https://raw.githubusercontent.com/sindhusharmamarupaka/sindhusharmamarupaka/main/badge_completed.png" width="140">
+
+---
+
 ## 🧭 How I Approach Data Problems
-
-![Data Analysis Pipeline](https://raw.githubusercontent.com/sindhusharmamarupaka/sindhusharmamarupaka/main/pipeline_diagram.png)
-
 I focus on why the analysis matters, not only on producing charts.
 
 ---
 
 ## 🛠️ Toolkit
 
-*Click a skill to see where I've applied it.*
+*Click a skill badge to see the list of projects — then click a project name to open its repo.*
 
-![Toolkit](https://raw.githubusercontent.com/sindhusharmamarupaka/sindhusharmamarupaka/main/toolkit_graphic.png)
+<details>
+<summary><img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"></summary>
+<br>
 
-*Currently developing: Machine Learning · Advanced SQL · Statistical Modelling*
+- **India Gender Gap Analytics** — MySQL staging for PLFS 2023–24 data *(in progress)*
+- [**Indian Railways Punctuality Analysis**](https://github.com/sindhusharmamarupaka/railways-sql-analysis) — 5–7 level query progression, CTEs, window functions, 1,900-row dataset
+</details>
 
+<details>
+<summary><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"></summary>
+<br>
 
+- [**Customer Feedback Analysis**](https://github.com/sindhusharmamarupaka/customer-feedback-analysis) — Pandas-based complaint filtering, differential word-rate analysis, HuggingFace API integration
+- [**Accident Dataset Analysis**](https://github.com/sindhusharmamarupaka/accident-dataset-analysis) — Cleaned and analyzed 12,316 real accident records; found normal-weather accidents are more fatal than poor-visibility ones
+</details>
 
+<details>
+<summary><img src="https://img.shields.io/badge/Power%20BI%20%2F%20DAX-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"></summary>
+<br>
+
+- **India Gender Gap Analytics** — Star-schema model, DAX measures, drill-through dashboard, bookmark navigation *(in progress)*
+</details>
+
+<details>
+<summary><img src="https://img.shields.io/badge/Power%20Query-217346?style=for-the-badge&logo=powerquery&logoColor=white"></summary>
+<br>
+
+- **India Gender Gap Analytics** — Cleaning and reshaping raw PLFS indicator columns *(in progress)*
+</details>
+
+<details>
+<summary><img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white"></summary>
+<br>
+
+- **SME Retail Finance Cash Flow Dashboard** *(upcoming)* — Cash flow modeling and KPI reporting
+</details>
+
+<details>
+<summary><img src="https://img.shields.io/badge/GenAI-4a9ef8?style=for-the-badge"></summary>
+<br>
+
+- [**Customer Feedback Analysis**](https://github.com/sindhusharmamarupaka/customer-feedback-analysis) — Automated response drafting via HuggingFace Inference API
+- [**Accident Dataset Analysis**](https://github.com/sindhusharmamarupaka/accident-dataset-analysis) — Directed, reviewed use across feature engineering, debugging, and insight-writing — analytical decisions made independently, GenAI used for implementation support only
+</details>
+
+<details>
+<summary><img src="https://img.shields.io/badge/Currently%20Developing-6c757d?style=for-the-badge"></summary>
+<br>
+
+Machine Learning · Advanced SQL · Statistical Modelling
+</details>
 ## 🗺️ Roadmap
 
 - [x] Indian Railways SQL Analysis
 - [x] Customer Feedback Analysis — Internship
+- [x] Accident Dataset Analysis
 - [ ] India Gender Gap Analytics *(in progress — capstone)*
 - [ ] SME Retail Finance Cash Flow Dashboard *(starts after capstone)*
 
@@ -103,8 +165,7 @@ I focus on why the analysis matters, not only on producing charts.
 
 ## 🤝 Connect
 
-📍 Hyderabad, India · **LinkedIn:** www.linkedin.com/in/sindhu-sharma-data-analyst · **Email:** sindhusharmamarupakaa@gmail.com · 
-**Medium:** [medium.com/@sindhusharmamarupakaa](https://medium.com/@sindhusharmamarupakaa)
+📍 Hyderabad, India · **LinkedIn:** [linkedin.com/in/sindhu-sharma-data-analyst](https://www.linkedin.com/in/sindhu-sharma-data-analyst) · **Email:** [sindhusharmamarupakaa@gmail.com](mailto:sindhusharmamarupakaa@gmail.com) · **Medium:** [medium.com/@sindhusharmamarupakaa](https://medium.com/@sindhusharmamarupakaa)
 
 ---
 
