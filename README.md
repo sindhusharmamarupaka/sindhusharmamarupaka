@@ -6,30 +6,24 @@ I'm drawn to public-interest data in particular — labour force surveys, railwa
 
 ---
 
-## 🔎 Currently Investigating
-
-**India Gender Gap Analytics**
-
-An end-to-end analysis of gender disparities in labour force participation across India, using PLFS 2023–24 data. Built as a full analytical model — star-schema data, DAX measures, drill-through dashboard — not just a chart wrapped in a dashboard shell.
-
-<img src="https://raw.githubusercontent.com/sindhusharmamarupaka/sindhusharmamarupaka/main/badge_in_progress.png" width="140">
-
-**Key questions driving this project:**
-1. How does female LFPR vary across Indian states?
-2. Which states show the largest gender gap?
-3. How does participation differ between rural and urban areas?
-4. Which demographic groups show the largest disparities?
-
----
-
 ## 📌 Case Studies
 
 ### 01 · India Gender Gap Analytics
 ![SQL](https://img.shields.io/badge/SQL-d64545?style=for-the-badge&logo=mysql&logoColor=white) ![Power Query](https://img.shields.io/badge/Power%20Query-e75480?style=for-the-badge&logo=powerquery&logoColor=white) ![DAX](https://img.shields.io/badge/DAX-2e8b57?style=for-the-badge) ![Power BI](https://img.shields.io/badge/Power%20BI-d4a017?style=for-the-badge&logo=powerbi&logoColor=black)
 
-Real-world analysis of gender and labour-force participation patterns across India.
+**Question**
+Why do fewer women work than men in India, and does the gap shift with location, education, or marital status?
 
-<img src="https://raw.githubusercontent.com/sindhusharmamarupaka/sindhusharmamarupaka/main/badge_in_progress.png" width="140">
+**Approach**
+An end-to-end pipeline on 319,773 working-age PLFS 2023–24 records — MySQL for cleaning and joins, Power Query for decoding, DAX for a 13-page Power BI dashboard with Story Mode navigation, a Key Influencers ML visual, and a state-level what-if explorer.
+
+**What I caught**
+A DAX measure meant for arithmetic was silently pulling from a `FORMAT()`-wrapped text field instead of its raw numeric counterpart, throwing off downstream calculations. Traced it and split every display measure from its `_Raw` numeric twin.
+
+**Delivered**
+A 13-page interactive dashboard, a 31-page written report, and per-page SQL validation files cross-checked against the raw microdata.
+
+<img src="https://raw.githubusercontent.com/sindhusharmamarupaka/sindhusharmamarupaka/main/badge_completed.png" width="140">
 
 ---
 
@@ -87,7 +81,13 @@ Shortlisted from ~25 students at Imarticus. Full pipeline — notebook, README, 
 ---
 
 ## 🧭 How I Approach Data Problems
-I focus on why the analysis matters, not only on producing charts.
+
+I don't stop at "what happened" — every project here is built to answer "so what should we do about it." A few habits that show up consistently across my work:
+
+- **I distrust raw numbers until I've stress-tested them.** Aggregates hide bias. On the accident dataset, raw counts made "Normal" weather look safest simply because it's the most common condition — switching to within-category percentages flipped that story entirely.
+- **I audit the pipeline before I trust the output.** On the Railways analysis, rows were silently dropping during CSV import. I traced it to an encoding mismatch before it could quietly skew 1,900 records of delay data — not after. On the Gender Gap dashboard, a DAX measure was silently pulling from a formatted text field instead of its raw number — I caught it before it reached the dashboard.
+- **I choose real, messy, public-interest data on purpose** — labour force surveys, railway operations, accident records — because that's where analytical judgment is actually tested, not a cleaned textbook dataset.
+- **I use GenAI for execution, not judgment.** Every interpretive call — what the data means, which comparison matters, what to recommend — is mine. AI supports implementation; it doesn't make the call.
 
 ---
 
@@ -99,7 +99,7 @@ I focus on why the analysis matters, not only on producing charts.
 <summary><img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"></summary>
 <br>
 
-- **India Gender Gap Analytics** — MySQL staging for PLFS 2023–24 data *(in progress)*
+- [**India Gender Gap Analytics**](https://github.com/sindhusharmamarupaka/gender-gap-labour-force-india) — MySQL cleaning and joins across 319,773 PLFS records
 - [**Indian Railways Punctuality Analysis**](https://github.com/sindhusharmamarupaka/railways-sql-analysis) — 5–7 level query progression, CTEs, window functions, 1,900-row dataset
 </details>
 
@@ -115,14 +115,14 @@ I focus on why the analysis matters, not only on producing charts.
 <summary><img src="https://img.shields.io/badge/Power%20BI%20%2F%20DAX-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"></summary>
 <br>
 
-- **India Gender Gap Analytics** — Star-schema model, DAX measures, drill-through dashboard, bookmark navigation *(in progress)*
+- [**India Gender Gap Analytics**](https://github.com/sindhusharmamarupaka/gender-gap-labour-force-india) — 13-page dashboard, Story Mode navigation, Key Influencers ML visual, what-if explorer
 </details>
 
 <details>
 <summary><img src="https://img.shields.io/badge/Power%20Query-217346?style=for-the-badge&logo=powerquery&logoColor=white"></summary>
 <br>
 
-- **India Gender Gap Analytics** — Cleaning and reshaping raw PLFS indicator columns *(in progress)*
+- [**India Gender Gap Analytics**](https://github.com/sindhusharmamarupaka/gender-gap-labour-force-india) — Decoding raw PLFS indicator columns
 </details>
 
 <details>
@@ -146,12 +146,13 @@ I focus on why the analysis matters, not only on producing charts.
 
 Machine Learning · Advanced SQL · Statistical Modelling
 </details>
+
 ## 🗺️ Roadmap
 
 - [x] Indian Railways SQL Analysis
 - [x] Customer Feedback Analysis — Internship
 - [x] Accident Dataset Analysis
-- [ ] India Gender Gap Analytics *(in progress — capstone)*
+- [x] India Gender Gap Analytics
 - [ ] SME Retail Finance Cash Flow Dashboard *(starts after capstone)*
 
 ---
