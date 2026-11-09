@@ -1,8 +1,8 @@
-![Sindhu Marupaka](https://raw.githubusercontent.com/sindhusharmamarupaka/sindhusharmamarupaka/main/profile_banner.png)
+![Sindhu Marupaka](https://raw.githubusercontent.com/sindhusharmamarupaka/sindhusharmamarupaka/main/profile_banner.png?v=2)
 
 I work with data to uncover patterns, answer business questions, and communicate insights through analysis and visualization. Most dashboards answer "what happened" — I try to build ones that also answer "so what should we do about it."
 
-I'm drawn to public-interest data in particular — labour force surveys, railway operations, agricultural risk — because I'd rather practice on real, messy questions that affect people than polish a textbook dataset.
+I'm drawn to public-interest data in particular — labour force surveys, railway operations, government tenders, agricultural risk — because I'd rather practice on real, messy questions that affect people than polish a textbook dataset.
 
 ---
 
@@ -99,6 +99,25 @@ A 26-section notebook, a written analysis on Medium, and a repo README with rank
 
 ---
 
+### 06 · TenderLens: Single-Bid Risk in Assam Government Tenders
+![Python](https://img.shields.io/badge/Python-355c7d?style=for-the-badge&logo=python&logoColor=white) ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-f7931e?style=for-the-badge&logo=scikitlearn&logoColor=white) ![SHAP](https://img.shields.io/badge/SHAP-0aa6a6?style=for-the-badge) ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+
+**Question :**
+Which new government tenders are likely to get only one bidder, and where should an auditor look first?
+
+**Approach :**
+Audited 39,500 real Assam e-tender files down to 6,790 tenders with a verified bidder list. Built 7 clues known on the publish day, split strictly by time, and compared Logistic Regression, Random Forest, XGBoost, NLP and a neural network against random checking and a simple rule. Explained each tender with SHAP, flagged odd tenders with Isolation Forest, and built an 8-page Streamlit app with a fact-checked GenAI review brief.
+
+**What I caught :**
+The single-bid pattern flipped after Sep 2022 (36% → 24%), so models that looked fine on old data failed on new months. I tested only on future months, locked my plan before the one final test, and dropped the neural network and autoencoder when they did not beat the simpler models.
+
+**Delivered :**
+A [live app](https://tenderlens-sindhu.streamlit.app/), a [GitHub repo](https://github.com/sindhusharmamarupaka/tenderlens-single-bid-prediction) with 9 notebooks, 96 charts and a 40-page report. Found that Rs 14,752 crore (36.5% of the money) went out with only one bidder; in the riskiest 20%, the model caught 101 single-bid tenders vs 79 by random checking.
+
+<img src="https://raw.githubusercontent.com/sindhusharmamarupaka/sindhusharmamarupaka/main/badge_completed.png" width="140">
+
+---
+
 ## 🧭 How I Approach Data Problems
 
 I don't stop at "what happened" — every project here is built to answer "so what should we do about it." A few habits that show up consistently across my work:
@@ -120,6 +139,7 @@ I don't stop at "what happened" — every project here is built to answer "so wh
 
 - [**India Gender Gap Analytics**](https://github.com/sindhusharmamarupaka/gender-gap-labour-force-india) — MySQL cleaning and joins across 319,773 PLFS records
 - [**Indian Railways Punctuality Analysis**](https://github.com/sindhusharmamarupaka/railways-sql-analysis) — 5–7 level query progression, CTEs, window functions, 1,900-row dataset
+- [**TenderLens**](https://github.com/sindhusharmamarupaka/tenderlens-single-bid-prediction) — Every key EDA number re-checked with SQLite queries
 </details>
 
 <details>
@@ -129,6 +149,7 @@ I don't stop at "what happened" — every project here is built to answer "so wh
 - [**Customer Feedback Analysis**](https://github.com/sindhusharmamarupaka/customer-feedback-analysis) — Pandas-based complaint filtering, differential word-rate analysis, HuggingFace API integration
 - [**Accident Dataset Analysis**](https://github.com/sindhusharmamarupaka/accident-dataset-analysis) — Cleaned and analyzed 12,316 real accident records; found normal-weather accidents are more fatal than poor-visibility ones
 - [**Model Collapse Experiment**](https://github.com/sindhusharmamarupaka/model-collapse-wine-quality) — Class-conditional GMMs, multi-signal drift detection across 5 recursive generations
+- [**TenderLens**](https://github.com/sindhusharmamarupaka/tenderlens-single-bid-prediction) — Cleaned 39,500 tender files, leakage-safe features, 8-page Streamlit app ([live](https://tenderlens-sindhu.streamlit.app/))
 </details>
 
 <details>
@@ -158,6 +179,7 @@ I don't stop at "what happened" — every project here is built to answer "so wh
 
 - [**Customer Feedback Analysis**](https://github.com/sindhusharmamarupaka/customer-feedback-analysis) — Automated response drafting via HuggingFace Inference API
 - [**Accident Dataset Analysis**](https://github.com/sindhusharmamarupaka/accident-dataset-analysis) — Directed, reviewed use across feature engineering, debugging, and insight-writing — analytical decisions made independently, GenAI used for implementation support only
+- [**TenderLens**](https://github.com/sindhusharmamarupaka/tenderlens-single-bid-prediction) — Plain-English review briefs built only from a tender's real fields, with every number fact-checked and a template fallback
 </details>
 
 <details>
@@ -165,6 +187,7 @@ I don't stop at "what happened" — every project here is built to answer "so wh
 <br>
 
 - [**Model Collapse Experiment**](https://github.com/sindhusharmamarupaka/model-collapse-wine-quality) — Isolated a real −4.4% diversity loss from a preprocessing artifact across 5 recursive synthetic generations
+- [**TenderLens**](https://github.com/sindhusharmamarupaka/tenderlens-single-bid-prediction) — Logistic Regression, Random Forest, XGBoost, ANN and autoencoder under drift, SHAP explanations, Isolation Forest, bootstrap-tested against random checking
 </details>
 
 <details>
@@ -181,6 +204,7 @@ Advanced SQL · Statistical Modelling
 - [x] Accident Dataset Analysis
 - [x] India Gender Gap Analytics
 - [x] Model Collapse Experiment
+- [x] TenderLens — Single-Bid Risk in Assam Government Tenders (Capstone 2)
 
 
 ---
